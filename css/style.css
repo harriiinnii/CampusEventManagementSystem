@@ -1,0 +1,275 @@
+/* General Styling */
+
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    background-color: #f8fafc;
+}
+
+
+/* Header */
+
+header {
+    background: linear-gradient(90deg, #4f46e5, #9333ea);
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+header h1 {
+    font-size: 35px;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    background-color: #111827;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #a78bfa;
+}
+
+
+/* Hero Section */
+
+.hero {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to right, #2563eb, #38bdf8);
+    color: white;
+}
+
+
+.hero-content h2 {
+    font-size: 45px;
+}
+
+
+.hero-content p {
+    font-size: 20px;
+}
+
+
+/* Button */
+
+button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #facc15;
+    color: #111827;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+button:hover {
+    background-color: #fde047;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+.events {
+    text-align: center;
+    padding: 40px;
+}
+
+
+.event-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+
+.event-card {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px gray;
+}
+
+
+.event-card:hover {
+    transform: translateY(-10px);
+    transition: 0.3s;
+}
+.event-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.event-card button {
+    background-color: #4f46e5;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.event-card button:hover {
+    background-color: #9333ea;
+}
+.registration {
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px gray;
+}
+
+
+input, select {
+    width: 90%;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+label {
+    display: block;
+    font-weight: bold;
+}
+.login {
+    width: 40%;
+    margin: 50px auto;
+    text-align: center;
+}
+
+
+.login form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px gray;
+}
+.admin {
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+textarea {
+    width: 90%;
+    height: 100px;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.event-list {
+    background: white;
+    padding: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px gray;
+}
+.events-page {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.contact {
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+
+.contact form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px gray;
+}
+/* Smooth animation for cards */
+
+.event-card {
+    transition: transform 0.3s ease;
+}
+
+
+.event-card:hover {
+    transform: translateY(-10px);
+}
+
+
+/* Button animation */
+
+button {
+    transition: 0.3s;
+}
+
+
+button:hover {
+    transform: scale(1.05);
+}
+@media (max-width: 768px) {
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+
+    .event-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .registration,
+    .login,
+    .contact,
+    .admin {
+        width: 90%;
+    }
+
+}
+footer {
+    background-color: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+footer h3 {
+    font-size: 25px;
+}
